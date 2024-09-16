@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_weight="1"
+            android:background="@color/design_default_color_primary_dark"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:text="CALCULADORA"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/klipartz_com" />
+
+        <TextView
+            android:id="@+id/respuesta"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Escribe un número"
+            android:inputType="number"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Escribe un número"
+            android:inputType="number"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/button_suma"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:text="Suma"
+            android:textColorLink="@color/design_default_color_error"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_resta"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:text="Resta"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_division"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:text="División"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_multiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:text="Multiplicación"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:text="Salir"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_error"
+            android:gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>
