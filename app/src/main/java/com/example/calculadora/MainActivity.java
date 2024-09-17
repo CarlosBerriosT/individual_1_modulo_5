@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_resta;
     private Button btn_multiplicacion;
     private Button btn_division;
-    private Button btn_exit; // Añadido para el botón de salir
+    private Button btn_exit;
 
     private TextView text_respuesta;
     private EditText edit_numero_uno;
@@ -63,12 +63,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Configura el botón de salir
+
         btn_exit = findViewById(R.id.btn_exit);
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Finaliza la actividad actual y cierra la aplicación
+
                 finish();
                 System.exit(0);
             }
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public double division(int a, int b) {
-        return (double) a / b; // Cambio aquí para obtener un resultado decimal.
+        return (double) a / b;
     }
 
     // Enum para operaciones
